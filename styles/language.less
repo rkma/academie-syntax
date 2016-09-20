@@ -3,6 +3,8 @@
 .comment {
   color: @comment;
   font-style: italic;
+
+  &.documentation { color: @documentation; }
 }
 
 .keyword {
@@ -70,7 +72,7 @@
     &.function { color: @function-call; }
   }
   &.separator {
-    &.namespace, &.variable { color: @separator; }
+    &.namespace, &.variable, &.object { color: @separator; }
     &.method { color: @function-call; }
     &.key-value { color: @math-operator; }
   }
