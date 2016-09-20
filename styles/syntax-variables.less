@@ -1,0 +1,74 @@
+@import "colors";
+
+// General colors
+@syntax-background-color: @bg-color;
+@syntax-text-color:       @white;
+@syntax-cursor-color:     @dark-green;
+@syntax-selection-color:  lighten(@syntax-background-color, 10%);
+@syntax-cursor-line:      hsla(220, 100%,  80%, 0.06);
+
+// Guide colors
+@syntax-invisible-character-color: @guide-color;
+@syntax-indent-guide-color:        @guide-color;
+@syntax-wrap-guide-color:          @guide-color;
+
+// Gutter colors
+@syntax-gutter-text-color:                @gutter-color;
+@syntax-gutter-text-color-selected:       @white;
+@syntax-gutter-background-color:          @bg-color; // unused
+@syntax-gutter-background-color-selected: lighten(@bg-color, 4%);
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@dark-blue, 24%);
+@syntax-result-marker-color-selected: @dark-blue;
+
+// Git colors
+@syntax-color-renamed:  @blue;
+@syntax-color-added:    @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed:  @red;
+
+// Language colors
+@comment: @grey;
+
+@keyword:          @bright-white;
+@keyword-control:  @keyword;
+@keyword-def:      @keyword;
+@keyword-language: @dark-magenta;
+
+@class-def:      @magenta;
+@class-call:     @bright-magenta;
+@function-def:   @blue;
+@function-call:  @bright-blue;
+@special-method: @bright-red;
+
+@string:         @dark-green;
+@regexp:         @bright-cyan;
+@interpol-bar:   @bright-red;
+@interpol-value: @syntax-text-color;
+@char-esc:       @red;
+@symbol:         @bright-green;
+@constant:       @magenta;
+@variable:       @orange;
+@readwrite:      @blue;
+@storage:        @bright-red;
+
+@math-operator: @yellow;
+@math-number:   @math-operator;
+@separator:     @bright-white;
+
+// HTML/CSS and GitHub Flavored Markdown
+@html-name-tag:       darken(@orange, 10%);
+@html-property-name:  @bright-magenta;
+@html-property-value: @bright-blue;
+@html-attribute-name: @yellow;
+@html-separator:      @cyan;
+@html-unit:           @bright-red;
+
+@md-variable:  @red;
+@md-heading:   @bright-yellow;
+@md-bold:      @yellow;
+@md-italic:    @yellow;
+@md-link-name: @bright-blue;
+@md-link-url:  @bright-magenta;
+@md-issue:     @bright-red;

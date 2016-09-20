@@ -1,0 +1,168 @@
+// LANGUAGE ----------------------------------------------
+
+.comment {
+  color: @comment;
+  font-style: italic;
+}
+
+.keyword {
+  &.control { color: @keyword-control;
+    &.module, &.class, &.def { color: @keyword-def; }
+    &.language { color: @keyword-language; }
+  }
+  &.operator { color: @math-operator; }
+  &.other {
+    &.special-method { color: @special-method; }
+    &.unit { color: @html-unit; }
+  }
+}
+
+.constant {
+  &.variable { color: @constant; }
+  &.numeric { color: @math-number; }
+  &.character.escape { color: @char-esc; }
+  &.language { color: @keyword-language; }
+  &.other {
+    &.symbol { color: @symbol; }
+    &.placeholder { color: @interpol-bar; }
+  }
+}
+
+.entity {
+  &.name {
+    &.function { color: @function-def; }
+    &.class { color: @class-def; }
+    &.module { color: @class-def; }
+    &.tag { color: @html-name-tag; }
+  }
+  &.other {
+    &.inherited-class { color: @class-call; }
+    &.attribute-name { color: @html-attribute-name; }
+  }
+}
+
+.support {
+  &.class { color: @class-call; }
+  &.function { color: @function-call; }
+  &.property-name { color: @html-property-name; }
+  &.property-value { color: @html-property-value; }
+}
+
+.variable {
+  &.block { color: @variable; }
+  &.language { color: @keyword-language; }
+  &.parameter { color: @variable; }
+  &.readwrite { color: @readwrite }
+}
+
+.string { color: @string;
+  &.regexp { color: @regexp; }
+}
+
+.punctuation {
+  &.definition {
+    &.parameters { color: @function-def; }
+    &.tag { color: @html-separator; }
+  }
+  &.section {
+    &.embedded, .empty { color: @interpol-bar; }
+    &.array, &.scope { color: @separator; }
+    &.function { color: @function-call; }
+  }
+  &.separator {
+    &.namespace, &.variable { color: @separator; }
+    &.method { color: @function-call; }
+    &.key-value { color: @math-operator; }
+  }
+}
+
+.embedded { color: @interpol-value; }
+
+.underline { text-decoration: underline; }
+
+.storage {
+  &.type { color: @storage;
+    &.function { color: @function-def; }
+    &.class { color: @keyword-def }
+  }
+}
+
+.meta {
+  &.tag {
+    .string { color: @html-property-value; }
+  }
+}
+
+.invalid {
+  &.deprecated {
+    color: darken(@syntax-color-modified, 50%) !important;
+    background-color: @syntax-color-modified !important;
+  }
+  &.illegal {
+    color: @bright-white !important;
+    background-color: @syntax-color-removed !important;
+  }
+}
+
+// SPECIFIC --------------------------------------------
+
+.markup {
+  &.heading {
+    background-color: @md-heading;
+    color: @black;
+  }
+  &.bold {
+    color: @md-bold;
+    font-weight: bold;
+  }
+  &.italic {
+    color: @md-italic;
+    font-style: italic;
+  }
+  &.link { color: @md-link-url; }
+  &.raw { color: @string; }
+}
+
+// GitHub Flavored Markdown
+.source.gfm {
+  .markup { -webkit-font-smoothing: auto;
+    &.heading-1 { padding-right: 1.2em; }
+    &.heading-2 { padding-right: 1.8em; }
+    &.heading-3 { padding-right: 2.4em; }
+    &.heading-4 { padding-right: 2.8em; }
+    &.heading-5 { padding-right: 3.5em; }
+    &.heading.marker { color: @md-heading; }
+  }
+  .link {
+    .entity { color: @md-link-name; }
+    .punctuation { color: @syntax-text-color; }
+  }
+  .variable { color: @md-variable; }
+  .quote { color: @string; }
+  .username { color: @md-link-name; text-decoration: underline; }
+  .issue.number { color: @md-issue; text-decoration: underline; }
+}
+
+.source.elixir {
+  .variable.other {
+    &.constant { color: @class-call; }
+    &.anonymous { color: @function-def; }
+  }
+}
+
+.source.js {
+  .variable.object { color: @variable; }
+  .meta{
+    &.function-call {
+      .entity.name.function { color: @function-call; }
+    }
+    &.method-call > .entity.name.function { color: @function-call; }
+    &.parameters {
+      .support.class { color: @variable; }
+    }
+  }
+}
+
+.source.c {
+  .punctuation.definition.parameters { color: @syntax-text-color; }
+}

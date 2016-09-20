@@ -1,0 +1,15 @@
+{
+  "name": "academie-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Syntax with context representation, easy on the eyes.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/rkma/academie-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
