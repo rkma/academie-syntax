@@ -111,7 +111,13 @@
 .markup {
   &.heading {
     background-color: @md-heading;
-    color: @black;
+    color: @bright-black;
+    font-weight: bold;
+
+    &.marker, &.space {
+      background-color: @syntax-background-color;
+      color: @md-heading;
+    }
   }
   &.bold {
     color: @md-bold;
@@ -127,14 +133,6 @@
 
 // GitHub Flavored Markdown
 .source.gfm {
-  .markup { -webkit-font-smoothing: auto;
-    &.heading-1 { padding-right: 1.2em; }
-    &.heading-2 { padding-right: 1.8em; }
-    &.heading-3 { padding-right: 2.4em; }
-    &.heading-4 { padding-right: 2.8em; }
-    &.heading-5 { padding-right: 3.5em; }
-    &.heading.marker { color: @md-heading; }
-  }
   .link {
     .entity { color: @md-link-name; }
     .punctuation { color: @syntax-text-color; }
