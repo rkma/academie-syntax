@@ -8,11 +8,10 @@
 }
 
 .keyword {
-  &.control { color: @keyword-control;
-    &.module, &.class, &.def { color: @keyword-def; }
-    &.language { color: @keyword-language; }
+  &.control { color: @keyword;
+    &.language { color: @language; }
   }
-  &.operator { color: @math-operator; }
+  &.operator { color: @operator; }
   &.other {
     &.special-method { color: @special-method; }
     &.unit { color: @html-unit; }
@@ -21,12 +20,12 @@
 
 .constant {
   &.variable { color: @constant; }
-  &.numeric { color: @math-number; }
+  &.numeric { color: @number; }
   &.character.escape { color: @char-esc; }
-  &.language { color: @keyword-language; }
+  &.language { color: @language; }
   &.other {
     &.symbol { color: @symbol; }
-    &.placeholder { color: @interpol-bar; }
+    &.placeholder { color: @interpol; }
   }
 }
 
@@ -52,7 +51,7 @@
 
 .variable {
   &.block { color: @variable; }
-  &.language { color: @keyword-language; }
+  &.language { color: @language; }
   &.parameter { color: @variable; }
   &.readwrite { color: @readwrite }
 }
@@ -67,25 +66,25 @@
     &.tag { color: @html-separator; }
   }
   &.section {
-    &.embedded, .empty { color: @interpol-bar; }
+    &.embedded, .empty { color: @interpol; }
     &.array, &.scope { color: @separator; }
     &.function { color: @function-call; }
   }
   &.separator {
     &.namespace, &.variable, &.object { color: @separator; }
     &.method { color: @function-call; }
-    &.key-value { color: @math-operator; }
+    &.key-value { color: @operator; }
   }
 }
 
-.embedded { color: @interpol-value; }
+.embedded { color: @syntax-text-color; }
 
 .underline { text-decoration: underline; }
 
 .storage {
   &.type { color: @storage;
     &.function { color: @function-def; }
-    &.class { color: @keyword-def }
+    &.class { color: @keyword; }
   }
 }
 
