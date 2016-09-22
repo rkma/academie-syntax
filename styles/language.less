@@ -26,7 +26,7 @@
   &.language { color: @language; }
   &.other {
     &.symbol { color: @symbol; }
-    &.placeholder { color: @interpol; }
+    &.placeholder { color: @wildcard; }
   }
 }
 
@@ -50,11 +50,13 @@
   &.property-value { color: @html-property-value; }
 }
 
-.variable {
+.variable { font-style: normal;
   &.block { color: @variable; }
   &.language { color: @language; }
   &.parameter { color: @variable; }
   &.readwrite { color: @readwrite }
+  &.wildcard { color: @wildcard; }
+  &.unused { color: @unused; }
 }
 
 .string { color: @string;

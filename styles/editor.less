@@ -4,38 +4,24 @@ atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
-  .cursor {
-    border-left: 2px solid @syntax-cursor-color;
-  }
+  .cursor { border-left: 2px solid @syntax-cursor-color; }
 
-  .line.cursor-line {
-    background-color: @syntax-cursor-line;
-  }
+  .line.cursor-line { background-color: @syntax-cursor-line; }
 
-  .selection .region {
-    background-color: @syntax-selection-color;
-  }
+  .selection .region { background-color: @syntax-selection-color; }
 
   .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
   }
 
-  .invisible {
-    color: @syntax-text-color;
-  }
+  .invisible { color: @syntax-text-color; }
 
-  .invisible-character {
-    color: @syntax-invisible-character-color;
-  }
+  .invisible-character { color: @syntax-invisible-character-color; }
 
-  .indent-guide {
-    color: @syntax-indent-guide-color;
-  }
+  .indent-guide { color: @syntax-indent-guide-color; }
 
-  .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
-  }
+  .wrap-guide { background-color: @syntax-wrap-guide-color; }
 
   // Gutter
 
@@ -44,23 +30,21 @@ atom-text-editor, :host {
       color: @syntax-gutter-text-color;
       -webkit-font-smoothing: antialiased;
 
+      .icon-right {
+        color: @syntax-text-color;
+      }
+      &.bookmarked {
+        color: @bright-white;
+        background-color: @syntax-selection-color;
+      }
       &.cursor-line {
         color: @syntax-gutter-text-color-selected;
         background-color: @syntax-gutter-background-color-selected;
       }
-      &.cursor-line-no-selection {
-        background-color: transparent;
-      }
-
-      .icon-right {
-        color: @syntax-text-color;
-      }
     }
 
     &:not(.git-diff-icon) .line-number.git-line-removed {
-      &.git-line-removed::before {
-        bottom: -3px;
-      }
+      &.git-line-removed::before { bottom: -3px; }
       &::after {
         content: "";
         position: absolute;
