@@ -48,7 +48,9 @@
   &.property-value { color: @html-property-value; }
 }
 
-.variable { font-style: normal;
+.variable {
+  font-style: normal;
+
   &.block { color: @variable; }
   &.language { color: @language; }
   &.parameter { color: @variable; }
@@ -57,7 +59,9 @@
   &.unused { color: @unused; }
 }
 
-.string { color: @string;
+.string {
+  color: @string;
+
   &.regexp { color: @regexp; }
 }
 
@@ -157,7 +161,16 @@
 }
 
 .source.js {
-  .variable.object { color: @variable; }
+  .string {
+    &.unquoted { color: @symbol; }
+    .quasi { color: @syntax-text-color;
+      .punctuation { color: @interpol; }
+    }
+  }
+  .variable {
+    .object { color: @variable; }
+    &.readwrite { color: @syntax-text-color; }
+  }
   .meta{
     &.function-call {
       .entity.name.function { color: @function-call; }
