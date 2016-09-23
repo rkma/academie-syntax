@@ -1,5 +1,3 @@
-// LANGUAGE ----------------------------------------------
-
 .comment {
   color: @comment;
   font-style: italic;
@@ -108,7 +106,7 @@
   }
 }
 
-// SPECIFIC --------------------------------------------
+// SPECIFIC -----------------------------------------------------
 
 .markup {
   &.heading {
@@ -141,8 +139,14 @@
   }
   .variable { color: @md-variable; }
   .quote { color: @string; }
-  .username { color: @md-link-name; text-decoration: underline; }
-  .issue.number { color: @md-issue; text-decoration: underline; }
+  .username {
+    color: @md-link-name;
+    font-weight: bold;
+  }
+  .issue.number {
+    color: @md-issue;
+    font-weight: bold;
+  }
 }
 
 .source.elixir {
@@ -167,4 +171,8 @@
 
 .source.c {
   .punctuation.definition.parameters { color: @syntax-text-color; }
+}
+
+.source.css {
+  .variable.other { color: @variable; }
 }
