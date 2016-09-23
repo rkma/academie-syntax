@@ -33,7 +33,12 @@
     &.function { color: @function-def; }
     &.class { color: @class-def; }
     &.module { color: @class-def; }
-    &.tag { color: @html-name-tag; }
+    &.tag {
+      color: @html-property-name;
+
+      &.structure { color: @syntax-text-color; }
+      &.block { color: @html-name-tag; }
+    }
   }
   &.other {
     &.inherited-class { color: @class-call; }
@@ -168,7 +173,7 @@
     }
   }
   .variable {
-    .object { color: @variable; }
+    .object, &.language { color: @variable; }
     &.readwrite { color: @syntax-text-color; }
   }
   .meta{
