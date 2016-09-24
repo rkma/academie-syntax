@@ -15,7 +15,7 @@
 // Gutter colors
 @syntax-gutter-text-color:                @gutter-color;
 @syntax-gutter-text-color-selected:       @white;
-@syntax-gutter-background-color:          @bg-color; // unused
+@syntax-gutter-background-color:          darken(@bg-color, 1.5%);
 @syntax-gutter-background-color-selected: lighten(@bg-color, 4%);
 
 // For find and replace markers
@@ -56,7 +56,6 @@
 @wildcard:  @bright-red;
 
 // HTML/CSS and GitHub Flavored Markdown
-@html-name-tag:       darken(@orange, 10%);
 @html-property-name:  @bright-magenta;
 @html-property-value: @bright-blue;
 @html-attribute-name: @yellow;
