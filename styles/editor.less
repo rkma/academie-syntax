@@ -24,6 +24,8 @@ atom-text-editor, :host {
   // Gutter
 
   .gutter {
+    background-color: @syntax-gutter-background-color;
+
     .line-number {
       color: @syntax-gutter-text-color;
       -webkit-font-smoothing: antialiased;
@@ -32,7 +34,6 @@ atom-text-editor, :host {
         color: @syntax-text-color;
       }
       &.bookmarked {
-        color: @bright-white;
         background-color: @syntax-selection-color;
       }
       &.cursor-line {

@@ -1,7 +1,7 @@
 {
   "name": "academie-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Syntax with context representation, easy on the eyes.",
   "keywords": [
     "syntax",
