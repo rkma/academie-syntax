@@ -4,8 +4,10 @@ Syntax with context representation, easy on the eyes. Based on Wombat for osx te
 
 * Magenta: classes, constants
 * Blue: functions
-* Yellow: operators
-* Green: strings, symbols
+* Yellow: operators, symbols
+* Green: strings
 * Grey: comments
 * White: keywords, separators
 * Red: special methods, character escape
+
+![Theme screenshot](/screen-shot.png?raw=true)

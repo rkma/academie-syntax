@@ -1,11 +1,12 @@
 {
   "name": "academie-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
-  "description": "Syntax with context representation, easy on the eyes.",
+  "version": "0.0.0",
+  "description": "Syntax with context representation in colors.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark"
   ],
   "repository": "https://github.com/rkma/academie-syntax",
   "license": "MIT",
