@@ -10,4 +10,4 @@ Syntax with context representation, easy on the eyes. Based on Wombat for osx te
 * White: keywords, separators
 * Red: special methods, character escape
 
-![Theme screenshot](/screen-shot.png?raw=true)
+![Theme screenshot](https://raw.githubusercontent.com/rkma/academie-syntax/master/screen-shot.png)
