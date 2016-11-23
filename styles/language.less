@@ -95,6 +95,7 @@
     &.function { color: @function-def; }
     &.class { color: @keyword; }
   }
+  &.modifier { color: @storage; }
 }
 
 .meta {
@@ -192,4 +193,9 @@
 
 .source.css {
   .variable.other { color: @variable; }
+}
+
+.source.rust {
+  .keyword.other { color: @keyword; }
+  .support.constant { color: @constant; }
 }
